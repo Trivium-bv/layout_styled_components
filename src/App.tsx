@@ -14,14 +14,15 @@ function App() {
                 </ul>
             </Menu>
             <Body>
-                <StyledBtn as={Link} href={"#"}>LinkComponent</StyledBtn>
-                <StyledBtn as="a" href={"#"}>Link</StyledBtn>
+                <StyledBtn as={Link} href={'#'}>LinkComponent</StyledBtn>
+                <StyledBtn as="a" href={'#'}>Link</StyledBtn>
                 <StyledBtn>Hello</StyledBtn>
                 <SuperButton>SuperButton</SuperButton>
             </Body>
         </Container>
     )
 }
+
 export default App
 
 
