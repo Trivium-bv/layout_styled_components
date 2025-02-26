@@ -10,6 +10,6 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     body {
-        background-color: dimgrey;
+        background-color: gainsboro;
     }
 `
