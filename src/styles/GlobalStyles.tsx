@@ -1,4 +1,5 @@
 import {createGlobalStyle} from 'styled-components';
+import {myTheme} from './Theme.styled.tsx';
 
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -10,6 +11,6 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     body {
-        background-color: gainsboro;
+        background-color: ${myTheme.colors.grey.dark};
     }
 `

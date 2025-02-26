@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components';
 type StyledBtnPropsType = {
     color?: string
     fontSize?: string
-    primery?: boolean
+    primary?: boolean
     outlined?: boolean
     active?: boolean
 }
@@ -15,8 +15,8 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
     font-size: ${props => props.fontSize || '2rem'};;
     font-weight: bold;
 
-    //primery
-    ${props => props.primery && css<StyledBtnPropsType>`
+    //primary
+    ${props => props.primary && css<StyledBtnPropsType>`
         background-color: ${props => props.color || "#fa5879"};
         color: #f8dede;
 
@@ -38,7 +38,7 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
 `
 //другой пример
 //<StyledBtn btnType={"outlined"}>Hello</StyledBtn>
-//${props => props.btnType === "primery" && css<StyledBtnPropsType>``
+//${props => props.btnType === "primary" && css<StyledBtnPropsType>``
 //${props => props.btnType === "outlined" && css<StyledBtnPropsType>``
 //${props => props.active && css<StyledBtnPropsType>`
 // box-shadow: 5px "#fa5879"
